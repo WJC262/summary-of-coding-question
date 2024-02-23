@@ -1,0 +1,10 @@
+The problem: Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+The core of this problem is "remove element", so the fundamental method to remove a element from Linked list is what you should know. [node->next = node->next->next;]. You should also check node->next->val == val.
+
+Challenges:
+1.The problem requires me to return the head of the linked list, so I have to use a pointer that points to the head element. However, the head element mighr be the element that should be removed, so by using while, we remove all the head that has that certain value until the head element's value is not the value we need to removed.
+2.In each loop, if node->next = node->next->next; then we must not node = node->next; because that might skip the potential target element. Additionaly, when it comes to the end of tail of the linked list, this could avoid the possiblity of making node be null.
+
+dummy head node:
+By using dummy head node, I can simpily the code. dummyHead->next = head;, and creating another pointer called cur go through the linked list. At the end, you can return the head node by simply return dunmmy head node->next, which points to the first element of the linked list.
