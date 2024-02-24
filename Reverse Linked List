@@ -1,0 +1,15 @@
+Question: Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+The key point of this question is knowing how to use three pointer.
+The first pointer is pre, pointing to the element before cur pointer.
+The second pointer is cur, which always change it's direction to pre pointer.
+The third pointer is tmp, to save the element after cur.
+
+The basic idea is:
+as long as cur is not null:
+  tmp = cur->next
+  cur->next = pre
+  pre = cur
+  cur = tmp
+
+Finally we return pre.
