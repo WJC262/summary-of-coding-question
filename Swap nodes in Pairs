@@ -1,5 +1,5 @@
 Question: Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 
 The sequence of operation is so important. There are four pointers in total. When swap a pair, cur pointer points to element before the first element in pair, using "next" to get the rest of other three pointers.
-
+Temporary nodes are important. They appear as "Tmp"
 One thing need to say, the return value should be dummyHead->next instead of head, cause head has already became the second element of the linked list.
