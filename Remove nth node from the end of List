@@ -1,0 +1,6 @@
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+The key point of this question is to locate the element index before the element we want to remove.
+Using two pointer method, we move the first element n steps first, and then we move two pointer together.
+
+Why we usually create a dummy head node? Because this can help us find out the first element after we make changes to the list.
