@@ -1,0 +1,4 @@
+Question: Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+I need to know the way to initialize an array. int r[26] = {0};
+If you wanna know the relative consequence of an letter in the array, just minus letter "a", which is pretty simple.
