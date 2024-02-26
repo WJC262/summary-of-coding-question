@@ -1,0 +1,5 @@
+Question:
+Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+
+We use two pointers method, one from end to front, another one from front to end. we compare the two squared values of different pointer.
+Important! index and value are two different thing, be careful when you use them next time!
