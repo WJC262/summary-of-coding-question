@@ -1,0 +1,5 @@
+Question: Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+The easist way to do it is to have two pointers, which make the time complexity decrease a lot. For many circumstances,  there's no need to have two loops to solve one question.
