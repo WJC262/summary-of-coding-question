@@ -1,0 +1,12 @@
+Question:
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+1. Why we use unordered_map is because we not only need to compare the two values of elements but also need to return the index of the element. 
+2. When seeing a question that ask you to search a certain value, use hash!
+3. How do we insert a element into the hash table:
+   map.insert(pair<int, int>(i, j));
+4. I need to know the auto iter, which saves the element's value we need.
