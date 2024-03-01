@@ -1,0 +1,11 @@
+Q:Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
+
+Implement the MyQueue class:
+
+void push(int x) Pushes element x to the back of the queue.
+int pop() Removes the element from the front of the queue and returns it.
+int peek() Returns the element at the front of the queue.
+boolean empty() Returns true if the queue is empty, false otherwise.
+
+Because this question asks us to using queue, and the sequence for queue is comes first go first. We use two queues, the first queue stored elements we recieved, the second queue we make a copy of the first
+queue, and pop the last element of the first queue after we remove all the elements before the last one. Then we move rest of the elements back to the first queue and remove elements in second queue.
