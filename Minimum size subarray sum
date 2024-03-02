@@ -1,0 +1,6 @@
+Q: Given an array of positive integers nums and a positive integer target, return the minimal length of a 
+subarray
+ whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
+
+We need to sliding window to slove this problem. The core idea of sliding window is two pointers. We use for-loop for teh second pointer, and control the first pointer to move to the next element based 
+on the sum of subarray. 
